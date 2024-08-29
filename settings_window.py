@@ -47,7 +47,7 @@ class SettingsWindow(QMainWindow):
 
         splitter.addWidget(self.tree)
         splitter.addWidget(self.section_stack)
-        splitter.setSizes([150, 850])  # Adjusted values to make the left panel narrower
+        splitter.setSizes([100, 850])  # Adjusted values to make the left panel narrower
         main_layout.addWidget(splitter)
 
         button_layout = QHBoxLayout()
@@ -88,7 +88,7 @@ class SettingsWindow(QMainWindow):
             'View': ['Menu', 'Panel', 'Themes', 'Toolbar', 'UI'],
             'Table': ['Columns', 'Results', 'Search'],
             'Database': ['Directories', 'Extensions', 'Indexes'],  
-            'Setup': ['Apps', 'Filters', 'Groups', 'Highlights', 'Nukes', 'Paths', 'Rules', 'Sections', 'Sites', 'Skiplist', 'Tags']
+            'Setup': ['Apps', 'Bookmarks', 'Filters', 'Groups', 'Highlights', 'Nukes', 'Paths', 'Rules', 'Sections', 'Sites', 'Skiplist', 'Tags'],
         }
 
         self.tree_items = {}
