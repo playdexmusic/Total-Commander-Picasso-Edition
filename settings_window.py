@@ -1,4 +1,3 @@
-
 import sys
 import logging
 import configparser
@@ -6,8 +5,8 @@ import os
 from PyQt6.QtCore import Qt
 from PyQt6.QtWidgets import QApplication, QMainWindow, QWidget, QVBoxLayout, QSplitter, QTreeWidget, QStackedWidget, QPushButton, QHBoxLayout, QTreeWidgetItem, QCheckBox, QFormLayout, QMessageBox
 
-from controllers.settings_navigation_tree import SettingsNavigationTree  # Adjusted path
-from config.default_settings import DEFAULT_SETTINGS, create_default_ini  # Corrected import path
+from config.default_settings import DEFAULT_SETTINGS, create_default_ini
+from config.shared_imports import *
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -37,7 +36,10 @@ class SettingsWindow(QMainWindow):
 
         splitter = QSplitter(Qt.Orientation.Horizontal)
 
-        self.tree = SettingsNavigationTree()
+        self.tree = QTreeWidget()
+        self.tree.setHeaderHidden(True)  # Hide header if not needed
+        main_layout.addWidget(self.tree)
+
         self.add_tree_items()
 
         self.section_stack = QStackedWidget()
@@ -77,41 +79,34 @@ class SettingsWindow(QMainWindow):
             self.expand_all_sections()
 
     def add_tree_items(self):
-        # Corrected hierarchical structure for the Settings
+        # Clear the tree first to avoid any unwanted items
+        self.tree.clear()
+
+        # Define the hierarchical structure with the desired order
         sections = {
             'General': ['Alerts', 'Fonts', 'Language', 'Logs', 'Shortcuts'],
             'View': ['Menu', 'Panel', 'Themes', 'Toolbar', 'UI'],
-            'Table': ['Columns', 'Results', 'Search'],  # Search is correctly placed under Table
-            'Database': ['Directories', 'Extensions', 'Indexes'],  # Search removed from here
+            'Table': ['Columns', 'Results', 'Search'],
+            'Database': ['Directories', 'Extensions', 'Indexes'],  
             'Setup': ['Apps', 'Filters', 'Groups', 'Highlights', 'Nukes', 'Paths', 'Rules', 'Sections', 'Sites', 'Skiplist', 'Tags']
         }
 
         self.tree_items = {}
 
-        # Add the "General" section first
-        general_item = QTreeWidgetItem(["General"])
-        self.tree_items["General"] = general_item
-        self.tree.addTopLevelItem(general_item)
-        sorted_general_subsections = sorted(sections["General"])
-        for sub_section in sorted_general_subsections:
-            sub_item = QTreeWidgetItem([sub_section])
-            general_item.addChild(sub_item)
-            self.tree_items[sub_section] = sub_item
-
-        # Sort and add the rest of the sections
-        other_sections = sorted([s for s in sections.keys() if s != "General"])
-        for section in other_sections:
+        # Add the sections and subsections in the defined order
+        for section, subsections in sections.items():
+            logging.info(f'Adding section: {section}')  # Debugging line
             section_item = QTreeWidgetItem([section])
             self.tree_items[section] = section_item
             self.tree.addTopLevelItem(section_item)
             
-            sorted_subsections = sorted(sections[section])
-            for sub_section in sorted_subsections:
+            for sub_section in subsections:
+                logging.info(f'Adding sub-section: {sub_section}')  # Debugging line
                 sub_item = QTreeWidgetItem([sub_section])
                 section_item.addChild(sub_item)
                 self.tree_items[sub_section] = sub_item
                 
-        logging.info('Tree items added with sorted hierarchical structure.')
+        logging.info('Tree items added in specified order.')
 
     def add_sections(self):
         # Create a widget for the General section
