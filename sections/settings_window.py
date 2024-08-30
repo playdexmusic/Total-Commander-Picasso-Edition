@@ -1,5 +1,6 @@
 from config.shared_imports import *
 from sections.settings_navigation_tree import SettingsNavigationTree
+from sections.settings.general.font_settings import FontSettings
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -26,9 +27,6 @@ class SettingsWindow(QMainWindow):
         # Setup UI components
         self.setup_ui()
 
-        # Add sections to the stacked widget
-        self.add_sections()
-
         # Load initial settings (after sections are added)
         self.load_settings()
 
@@ -42,12 +40,12 @@ class SettingsWindow(QMainWindow):
         self.setCentralWidget(main_widget)
 
         splitter = QSplitter(Qt.Orientation.Horizontal)
-        
+
         # Use SettingsNavigationTree for the navigation tree
         self.tree = SettingsNavigationTree()
-        self.section_stack = QStackedWidget()
-
         splitter.addWidget(self.tree)
+
+        self.section_stack = QStackedWidget()
         splitter.addWidget(self.section_stack)
         splitter.setSizes([100, 850])  # Adjusted values to make the left panel narrower
         main_layout.addWidget(splitter)
@@ -56,6 +54,9 @@ class SettingsWindow(QMainWindow):
 
         # Connect signals
         self.tree.currentItemChanged.connect(self.display_section)
+
+        # Add sections to the stacked widget (Only the widgets, not the tree items)
+        self.add_sections()
 
     def setup_buttons(self, layout):
         """Set up the bottom action buttons."""
@@ -81,15 +82,27 @@ class SettingsWindow(QMainWindow):
         """Create and add section widgets to the stacked widget."""
         self.sections_widgets = {}
 
-        # Create General section
-        general_widget = self.create_general_section()
-        self.section_stack.addWidget(general_widget)
-        self.sections_widgets['General'] = general_widget
+        sections = {
+            'General': ['Alerts', 'Fonts', 'Language', 'Logs', 'Shortcuts'],
+            'View': ['Menu', 'Panel', 'Themes', 'Toolbar', 'UI'],
+            'Table': ['Columns', 'Results', 'Search'],
+            'Database': ['Directories', 'Extensions', 'Indexes'],  
+            'Setup': ['Apps', 'Bookmarks', 'Filters', 'Groups', 'Highlights', 'Nukes', 'Paths', 'Rules', 'Sections', 'Sites', 'Skiplist', 'Tags'],
+        }
 
-        # Create Logs section
-        logs_widget = self.create_logs_section()
-        self.section_stack.addWidget(logs_widget)
-        self.sections_widgets['Logs'] = logs_widget
+        for section, subsections in sections.items():
+            for subsection in subsections:
+                if subsection == 'Fonts':
+                    widget = FontSettings()
+                elif subsection == 'Logs':
+                    widget = self.create_logs_section()
+                elif subsection == 'Alerts':
+                    widget = self.create_general_section()
+                else:
+                    widget = self.create_placeholder_section(subsection)
+
+                self.section_stack.addWidget(widget)
+                self.sections_widgets[subsection] = widget
 
         logger.info('Sections added to the stack.')
 
@@ -105,6 +118,14 @@ class SettingsWindow(QMainWindow):
         general_layout.addRow(self.expand_sections_on_startup)
 
         return general_widget
+
+    def create_placeholder_section(self, subsection_name):
+        """Create a placeholder section widget for unimplemented subsections."""
+        widget = QWidget()
+        layout = QVBoxLayout(widget)
+        label = QLabel(f"{subsection_name} settings are not yet implemented.")
+        layout.addWidget(label)
+        return widget
 
     def create_logs_section(self):
         """Create the enhanced Logs section widget."""
@@ -201,9 +222,10 @@ class SettingsWindow(QMainWindow):
             self.rotate_logs.setChecked(self.config.getboolean('Logs', 'rotateLogs', fallback=False))
             self.compress_old_logs.setChecked(self.config.getboolean('Logs', 'compressOldLogs', fallback=False))
             logger.info('Log settings loaded from .ini file.')
-        else:
-            self.restore_log_defaults()
-            logger.info('No log settings found in .ini, loaded defaults.')
+
+        if 'Fonts' in self.sections_widgets:
+            self.sections_widgets['Fonts'].load_settings()
+            logger.info('Font settings loaded from .ini file.')
 
     def restore_log_defaults(self):
         """Restore log settings to default values."""
@@ -225,21 +247,17 @@ class SettingsWindow(QMainWindow):
     def apply_settings(self):
         """Save and apply current settings."""
         try:
-            if not self.config.has_section('General'):
-                self.config.add_section('General')
+            # Save General settings
+            self.save_general_settings()
 
-            self.config.set('General', 'maximizeOnStartup', str(self.maximize_on_startup.isChecked()))
-            self.config.set('General', 'expandSectionsOnStartup', str(self.expand_sections_on_startup.isChecked()))
+            # Save Logs settings
+            self.save_logs_settings()
 
-            if not self.config.has_section('Logs'):
-                self.config.add_section('Logs')
+            # Save Font settings
+            if 'Fonts' in self.sections_widgets:
+                self.sections_widgets['Fonts'].save_settings()
 
-            self.config.set('Logs', 'enableVerboseLogging', str(self.enable_verbose_logging.isChecked()))
-            self.config.set('Logs', 'saveLogsToFile', str(self.save_logs_to_file.isChecked()))
-            self.config.set('Logs', 'maxLogFileSize', str(self.max_log_file_size.value()))
-            self.config.set('Logs', 'rotateLogs', str(self.rotate_logs.isChecked()))
-            self.config.set('Logs', 'compressOldLogs', str(self.compress_old_logs.isChecked()))
-
+            # Write all settings to the config file
             with open(self.config_path, 'w') as configfile:
                 self.config.write(configfile)
 
@@ -250,10 +268,33 @@ class SettingsWindow(QMainWindow):
             logger.error('Failed to save settings: %s', e)
             QMessageBox.warning(self, 'Warning', f'Failed to save settings: {e}')
 
+    def save_general_settings(self):
+        """Save General settings."""
+        if not self.config.has_section('General'):
+            self.config.add_section('General')
+
+        self.config.set('General', 'maximizeOnStartup', str(self.maximize_on_startup.isChecked()))
+        self.config.set('General', 'expandSectionsOnStartup', str(self.expand_sections_on_startup.isChecked()))
+
+    def save_logs_settings(self):
+        """Save Logs settings."""
+        if not self.config.has_section('Logs'):
+            self.config.add_section('Logs')
+
+        self.config.set('Logs', 'enableVerboseLogging', str(self.enable_verbose_logging.isChecked()))
+        self.config.set('Logs', 'saveLogsToFile', str(self.save_logs_to_file.isChecked()))
+        self.config.set('Logs', 'maxLogFileSize', str(self.max_log_file_size.value()))
+        self.config.set('Logs', 'rotateLogs', str(self.rotate_logs.isChecked()))
+        self.config.set('Logs', 'compressOldLogs', str(self.compress_old_logs.isChecked()))
+
     def restore_defaults(self):
         """Restore settings to default values and apply them."""
         self.restore_general_defaults()
         self.restore_log_defaults()
+
+        if 'Fonts' in self.sections_widgets:
+            self.sections_widgets['Fonts'].load_settings()  # This will restore the font settings
+
         logger.info('Default settings restored.')
         self.apply_settings()
 

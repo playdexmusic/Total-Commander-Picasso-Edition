@@ -8,12 +8,30 @@ import os
 DEFAULT_SETTINGS = {
     'General': {
         'maximizeOnStartup': True,
-        'expandSectionsOnStartup': True,
+        'expandSectionsOnStartup': False,
+    },
+    'Logs': {
+        'enableVerboseLogging': False,
+        'saveLogsToFile': True,
+        'maxLogFileSize': 10,  # in MB
+        'rotateLogs': True,
+        'compressOldLogs': False,
+    },
+    'Font': {
+        'fontFamily': 'Arial',
+        'fontSize': 12,
+        'fontBold': False,
+        'fontItalic': False,
+        'fontUnderline': False,
+        'fontColor': '#000000',  # Default black
+        'fontSmoothing': True,
     },
     'Internal': {
-        'cancelBehavior': 'exit',  # Options: 'exit', 'go_to_main_app'
+        'cancelBehavior': 'go_to_main_app',  # Default behavior on cancel
     }
 }
+
+
 
 def create_default_ini(config_path='config/settings.ini'):
     # Ensure the config directory exists

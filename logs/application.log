@@ -116,3 +116,272 @@
 2024-08-30 01:19:22,167 - INFO - Displaying section: Language
 2024-08-30 01:19:22,632 - INFO - Displaying section: Logs
 2024-08-30 01:23:49,969 - INFO - Displaying section: Tags
+2024-08-30 01:26:25,393 - DEBUG - shared_imports.py loaded successfully.
+2024-08-30 01:26:26,065 - INFO - Launching Total Commander: Picasso Edition...
+2024-08-30 01:26:26,141 - INFO - Tree items added in specified order.
+2024-08-30 01:26:26,149 - INFO - Sections added to the stack.
+2024-08-30 01:26:26,150 - INFO - Settings loaded from .ini file.
+2024-08-30 01:26:26,151 - INFO - Default log settings restored.
+2024-08-30 01:26:26,151 - INFO - No log settings found in .ini, loaded defaults.
+2024-08-30 01:26:26,207 - INFO - All sections expanded.
+2024-08-30 01:26:26,208 - INFO - Initial settings applied.
+2024-08-30 01:26:26,213 - INFO - Displaying section: General
+2024-08-30 01:26:27,358 - INFO - Displaying section: Logs
+2024-08-30 01:26:30,607 - INFO - Displaying section: Language
+2024-08-30 01:30:12,836 - DEBUG - shared_imports.py loaded successfully.
+2024-08-30 01:30:13,496 - INFO - Launching Total Commander: Picasso Edition...
+2024-08-30 01:33:56,737 - DEBUG - shared_imports.py loaded successfully.
+2024-08-30 01:38:29,644 - DEBUG - shared_imports.py loaded successfully.
+2024-08-30 01:38:30,346 - INFO - Launching Total Commander: Picasso Edition...
+2024-08-30 01:39:02,129 - DEBUG - shared_imports.py loaded successfully.
+2024-08-30 01:39:02,805 - INFO - Launching Total Commander: Picasso Edition...
+2024-08-30 01:39:02,879 - INFO - Tree items added in specified order.
+2024-08-30 01:39:02,887 - INFO - Initializing FontSettings UI.
+2024-08-30 01:39:58,295 - DEBUG - shared_imports.py loaded successfully.
+2024-08-30 01:39:58,971 - INFO - Launching Total Commander: Picasso Edition...
+2024-08-30 01:39:59,045 - INFO - Tree items added in specified order.
+2024-08-30 01:39:59,054 - INFO - Initializing FontSettings UI.
+2024-08-30 01:39:59,102 - INFO - Font preview updated.
+2024-08-30 01:39:59,103 - INFO - Sections added to the stack.
+2024-08-30 01:39:59,104 - INFO - Settings loaded from .ini file.
+2024-08-30 01:39:59,105 - INFO - Default log settings restored.
+2024-08-30 01:39:59,105 - INFO - No log settings found in .ini, loaded defaults.
+2024-08-30 01:39:59,187 - INFO - All sections expanded.
+2024-08-30 01:39:59,187 - INFO - Initial settings applied.
+2024-08-30 01:39:59,192 - INFO - Displaying section: General
+2024-08-30 01:40:01,676 - INFO - Displaying section: Fonts
+2024-08-30 01:40:02,466 - INFO - Displaying section: Logs
+2024-08-30 01:40:02,899 - INFO - Displaying section: Language
+2024-08-30 01:40:03,221 - INFO - Displaying section: Fonts
+2024-08-30 01:40:31,724 - INFO - Settings loaded from .ini file.
+2024-08-30 01:40:31,725 - INFO - Default log settings restored.
+2024-08-30 01:40:31,725 - INFO - No log settings found in .ini, loaded defaults.
+2024-08-30 01:40:31,726 - INFO - Changes canceled and settings reverted.
+2024-08-30 01:40:31,726 - INFO - Transitioning to the main application...
+2024-08-30 01:40:34,020 - INFO - Settings loaded from .ini file.
+2024-08-30 01:40:34,021 - INFO - Default log settings restored.
+2024-08-30 01:40:34,022 - INFO - No log settings found in .ini, loaded defaults.
+2024-08-30 01:40:34,023 - INFO - Changes canceled and settings reverted.
+2024-08-30 01:40:34,023 - INFO - Transitioning to the main application...
+2024-08-30 01:40:34,190 - INFO - Settings loaded from .ini file.
+2024-08-30 01:40:34,191 - INFO - Default log settings restored.
+2024-08-30 01:40:34,192 - INFO - No log settings found in .ini, loaded defaults.
+2024-08-30 01:40:34,192 - INFO - Changes canceled and settings reverted.
+2024-08-30 01:40:34,192 - INFO - Transitioning to the main application...
+2024-08-30 01:40:35,438 - INFO - Displaying section: Shortcuts
+2024-08-30 01:40:39,026 - DEBUG - shared_imports.py loaded successfully.
+2024-08-30 01:40:39,767 - INFO - Launching Total Commander: Picasso Edition...
+2024-08-30 01:40:39,850 - INFO - Tree items added in specified order.
+2024-08-30 01:40:39,859 - INFO - Initializing FontSettings UI.
+2024-08-30 01:40:39,900 - INFO - Font preview updated.
+2024-08-30 01:40:39,902 - INFO - Sections added to the stack.
+2024-08-30 01:40:39,902 - INFO - Settings loaded from .ini file.
+2024-08-30 01:40:39,903 - INFO - Default log settings restored.
+2024-08-30 01:40:39,903 - INFO - No log settings found in .ini, loaded defaults.
+2024-08-30 01:40:39,983 - INFO - All sections expanded.
+2024-08-30 01:40:39,984 - INFO - Initial settings applied.
+2024-08-30 01:40:39,990 - INFO - Displaying section: General
+2024-08-30 01:40:41,065 - INFO - Displaying section: Themes
+2024-08-30 01:40:41,450 - INFO - Displaying section: Shortcuts
+2024-08-30 01:40:41,721 - INFO - Displaying section: Fonts
+2024-08-30 01:40:41,962 - INFO - Displaying section: Alerts
+2024-08-30 01:40:45,800 - INFO - Displaying section: Filters
+2024-08-30 01:40:46,334 - INFO - Displaying section: Indexes
+2024-08-30 01:40:46,568 - INFO - Displaying section: Extensions
+2024-08-30 01:40:47,704 - INFO - Settings loaded from .ini file.
+2024-08-30 01:40:47,704 - INFO - Default log settings restored.
+2024-08-30 01:40:47,705 - INFO - No log settings found in .ini, loaded defaults.
+2024-08-30 01:40:47,706 - INFO - Changes canceled and settings reverted.
+2024-08-30 01:40:47,706 - INFO - Transitioning to the main application...
+2024-08-30 01:40:47,976 - INFO - Settings loaded from .ini file.
+2024-08-30 01:40:47,977 - INFO - Default log settings restored.
+2024-08-30 01:40:47,977 - INFO - No log settings found in .ini, loaded defaults.
+2024-08-30 01:40:47,977 - INFO - Changes canceled and settings reverted.
+2024-08-30 01:40:47,978 - INFO - Transitioning to the main application...
+2024-08-30 01:40:48,494 - INFO - Font settings saved.
+2024-08-30 01:40:48,495 - INFO - Settings applied and saved to the .ini file.
+2024-08-30 01:40:51,397 - INFO - Displaying section: Results
+2024-08-30 01:40:51,743 - INFO - Displaying section: UI
+2024-08-30 01:40:51,966 - INFO - Displaying section: Themes
+2024-08-30 01:40:52,191 - INFO - Displaying section: Menu
+2024-08-30 01:40:52,478 - INFO - Displaying section: Language
+2024-08-30 01:40:52,740 - INFO - Displaying section: Fonts
+2024-08-30 01:40:53,118 - INFO - Displaying section: Alerts
+2024-08-30 01:40:53,721 - INFO - Displaying section: Fonts
+2024-08-30 01:40:54,070 - INFO - Displaying section: Language
+2024-08-30 01:40:54,418 - INFO - Displaying section: Logs
+2024-08-30 01:40:55,390 - INFO - Displaying section: Language
+2024-08-30 01:40:56,735 - INFO - Settings loaded from .ini file.
+2024-08-30 01:40:56,736 - INFO - Log settings loaded from .ini file.
+2024-08-30 01:40:56,737 - INFO - Changes canceled and settings reverted.
+2024-08-30 01:40:56,737 - INFO - Transitioning to the main application...
+2024-08-30 01:40:57,333 - INFO - Settings loaded from .ini file.
+2024-08-30 01:40:57,333 - INFO - Log settings loaded from .ini file.
+2024-08-30 01:40:57,334 - INFO - Changes canceled and settings reverted.
+2024-08-30 01:40:57,334 - INFO - Transitioning to the main application...
+2024-08-30 01:40:57,566 - INFO - Settings loaded from .ini file.
+2024-08-30 01:40:57,567 - INFO - Log settings loaded from .ini file.
+2024-08-30 01:40:57,567 - INFO - Changes canceled and settings reverted.
+2024-08-30 01:40:57,568 - INFO - Transitioning to the main application...
+2024-08-30 01:40:57,756 - INFO - Settings loaded from .ini file.
+2024-08-30 01:40:57,757 - INFO - Log settings loaded from .ini file.
+2024-08-30 01:40:57,758 - INFO - Changes canceled and settings reverted.
+2024-08-30 01:40:57,758 - INFO - Transitioning to the main application...
+2024-08-30 01:40:57,930 - INFO - Settings loaded from .ini file.
+2024-08-30 01:40:57,931 - INFO - Log settings loaded from .ini file.
+2024-08-30 01:40:57,932 - INFO - Changes canceled and settings reverted.
+2024-08-30 01:40:57,932 - INFO - Transitioning to the main application...
+2024-08-30 01:40:59,364 - INFO - Displaying section: Logs
+2024-08-30 01:40:59,874 - INFO - Displaying section: Language
+2024-08-30 01:43:24,553 - DEBUG - shared_imports.py loaded successfully.
+2024-08-30 01:43:25,244 - INFO - Launching Total Commander: Picasso Edition...
+2024-08-30 01:43:25,317 - INFO - Tree items added in specified order.
+2024-08-30 01:43:25,325 - INFO - Initializing FontSettings UI.
+2024-08-30 01:43:25,360 - INFO - Font preview updated.
+2024-08-30 01:43:25,361 - INFO - Sections added to the stack.
+2024-08-30 01:43:25,362 - INFO - Settings loaded from .ini file.
+2024-08-30 01:43:25,363 - INFO - Log settings loaded from .ini file.
+2024-08-30 01:43:25,436 - INFO - All sections expanded.
+2024-08-30 01:43:25,437 - INFO - Initial settings applied.
+2024-08-30 01:43:25,442 - INFO - Displaying section: General
+2024-08-30 01:43:26,920 - INFO - Displaying section: Logs
+2024-08-30 01:43:27,814 - INFO - Displaying section: Fonts
+2024-08-30 01:43:28,830 - INFO - Displaying section: Alerts
+2024-08-30 01:43:29,240 - INFO - Displaying section: Fonts
+2024-08-30 01:43:29,637 - INFO - Displaying section: Language
+2024-08-30 01:43:30,046 - INFO - Displaying section: Fonts
+2024-08-30 01:43:30,365 - INFO - Displaying section: Alerts
+2024-08-30 01:43:30,804 - INFO - Displaying section: Fonts
+2024-08-30 01:43:30,827 - INFO - Displaying section: Language
+2024-08-30 01:44:45,133 - DEBUG - shared_imports.py loaded successfully.
+2024-08-30 01:44:45,889 - INFO - Launching Total Commander: Picasso Edition...
+2024-08-30 01:44:45,965 - INFO - Tree items added in specified order.
+2024-08-30 01:44:45,973 - INFO - Initializing FontSettings UI.
+2024-08-30 01:44:46,009 - INFO - Font preview updated.
+2024-08-30 01:44:46,010 - INFO - Sections added to the stack.
+2024-08-30 01:44:46,011 - INFO - Settings loaded from .ini file.
+2024-08-30 01:44:46,012 - INFO - Log settings loaded from .ini file.
+2024-08-30 01:44:46,094 - INFO - All sections expanded.
+2024-08-30 01:44:46,094 - INFO - Initial settings applied.
+2024-08-30 01:44:46,099 - INFO - Displaying section: General
+2024-08-30 01:44:47,310 - INFO - Displaying section: Fonts
+2024-08-30 01:44:47,895 - INFO - Displaying section: Language
+2024-08-30 01:46:02,185 - DEBUG - shared_imports.py loaded successfully.
+2024-08-30 01:46:02,856 - INFO - Launching Total Commander: Picasso Edition...
+2024-08-30 01:46:02,931 - INFO - Initializing FontSettings UI.
+2024-08-30 01:46:02,965 - INFO - Font preview updated.
+2024-08-30 01:46:02,966 - INFO - Sections added to the stack.
+2024-08-30 01:46:02,967 - INFO - Settings loaded from .ini file.
+2024-08-30 01:46:02,967 - INFO - Font preview updated.
+2024-08-30 01:46:02,968 - INFO - Font settings loaded.
+2024-08-30 01:46:02,968 - INFO - Font settings loaded from .ini file.
+2024-08-30 01:48:17,283 - DEBUG - shared_imports.py loaded successfully.
+2024-08-30 01:48:18,003 - INFO - Launching Total Commander: Picasso Edition...
+2024-08-30 01:48:18,078 - INFO - Initializing FontSettings UI.
+2024-08-30 01:48:18,111 - INFO - Font preview updated.
+2024-08-30 01:48:18,112 - INFO - Sections added to the stack.
+2024-08-30 01:48:18,113 - INFO - Settings loaded from .ini file.
+2024-08-30 01:49:50,632 - DEBUG - shared_imports.py loaded successfully.
+2024-08-30 01:49:51,320 - INFO - Launching Total Commander: Picasso Edition...
+2024-08-30 01:49:51,393 - INFO - Initializing FontSettings UI.
+2024-08-30 01:49:51,427 - INFO - Font preview updated.
+2024-08-30 01:49:51,428 - INFO - Sections added to the stack.
+2024-08-30 01:49:51,429 - INFO - Settings loaded from .ini file.
+2024-08-30 01:52:37,675 - DEBUG - shared_imports.py loaded successfully.
+2024-08-30 01:52:38,360 - INFO - Launching Total Commander: Picasso Edition...
+2024-08-30 01:52:38,433 - INFO - Initializing FontSettings UI.
+2024-08-30 01:52:38,467 - INFO - Font preview updated.
+2024-08-30 01:52:38,468 - INFO - Sections added to the stack.
+2024-08-30 01:52:38,469 - INFO - Settings loaded from .ini file.
+2024-08-30 01:53:20,724 - DEBUG - shared_imports.py loaded successfully.
+2024-08-30 01:53:21,396 - INFO - Launching Total Commander: Picasso Edition...
+2024-08-30 01:53:21,470 - INFO - Initializing FontSettings UI.
+2024-08-30 01:53:21,502 - INFO - Font preview updated.
+2024-08-30 01:53:21,503 - INFO - Sections added to the stack.
+2024-08-30 01:53:21,504 - INFO - Settings loaded from .ini file.
+2024-08-30 10:53:18,652 - DEBUG - shared_imports.py loaded successfully.
+2024-08-30 10:53:19,382 - INFO - Launching Total Commander: Picasso Edition...
+2024-08-30 10:53:19,472 - INFO - Initializing FontSettings UI.
+2024-08-30 10:53:19,540 - INFO - Font preview updated.
+2024-08-30 10:53:19,541 - INFO - Sections added to the stack.
+2024-08-30 10:53:19,542 - INFO - Settings loaded from .ini file.
+2024-08-30 10:58:19,516 - DEBUG - shared_imports.py loaded successfully.
+2024-08-30 10:58:20,212 - INFO - Launching Total Commander: Picasso Edition...
+2024-08-30 10:58:20,304 - INFO - Initializing FontSettings UI.
+2024-08-30 10:58:20,337 - INFO - Font preview updated.
+2024-08-30 10:58:20,338 - INFO - Sections added to the stack.
+2024-08-30 10:58:20,339 - INFO - Settings loaded from .ini file.
+2024-08-30 10:58:20,339 - INFO - Log settings loaded from .ini file.
+2024-08-30 10:58:20,340 - INFO - Font preview updated.
+2024-08-30 10:58:20,340 - INFO - Font settings loaded.
+2024-08-30 10:58:20,341 - INFO - Font settings loaded from .ini file.
+2024-08-30 10:58:20,438 - INFO - All sections expanded.
+2024-08-30 10:58:20,439 - INFO - Initial settings applied.
+2024-08-30 10:58:20,448 - INFO - Displaying section: General
+2024-08-30 10:58:21,699 - INFO - Displaying section: Fonts
+2024-08-30 10:58:22,745 - INFO - Displaying section: General
+2024-08-30 11:03:29,046 - INFO - Displaying section: Fonts
+2024-08-30 11:05:48,079 - DEBUG - shared_imports.py loaded successfully.
+2024-08-30 11:05:48,892 - INFO - Launching Total Commander: Picasso Edition...
+2024-08-30 11:05:48,969 - INFO - Tree items added in specified order.
+2024-08-30 11:05:48,972 - INFO - Initializing FontSettings UI.
+2024-08-30 11:05:49,006 - INFO - Font preview updated.
+2024-08-30 11:05:49,011 - INFO - Sections added to the stack.
+2024-08-30 11:10:05,615 - DEBUG - shared_imports.py loaded successfully.
+2024-08-30 11:10:06,301 - INFO - Launching Total Commander: Picasso Edition...
+2024-08-30 11:10:06,374 - INFO - Tree items added in specified order.
+2024-08-30 11:10:06,378 - INFO - Initializing FontSettings UI.
+2024-08-30 11:10:06,413 - INFO - Font preview updated.
+2024-08-30 11:10:06,417 - INFO - Sections added to the stack.
+2024-08-30 11:10:06,418 - INFO - Settings loaded from .ini file.
+2024-08-30 11:10:06,419 - INFO - Log settings loaded from .ini file.
+2024-08-30 11:10:06,420 - INFO - Font preview updated.
+2024-08-30 11:10:06,420 - INFO - Font settings loaded.
+2024-08-30 11:10:06,421 - INFO - Font settings loaded from .ini file.
+2024-08-30 11:10:06,504 - INFO - All sections expanded.
+2024-08-30 11:10:06,505 - INFO - Initial settings applied.
+2024-08-30 11:10:06,515 - INFO - Displaying section: General
+2024-08-30 11:10:12,340 - INFO - Displaying section: Setup
+2024-08-30 11:10:12,750 - INFO - Displaying section: Apps
+2024-08-30 11:10:13,612 - INFO - Displaying section: Rules
+2024-08-30 11:10:29,093 - INFO - Displaying section: General
+2024-08-30 11:10:30,107 - INFO - Displaying section: General
+2024-08-30 11:11:34,722 - INFO - Displaying section: Logs
+2024-08-30 11:11:36,007 - INFO - Displaying section: Language
+2024-08-30 11:11:36,320 - INFO - Displaying section: Alerts
+2024-08-30 11:11:36,980 - INFO - Displaying section: General
+2024-08-30 11:11:38,506 - INFO - Displaying section: Alerts
+2024-08-30 11:11:40,254 - INFO - Displaying section: Language
+2024-08-30 11:11:40,651 - INFO - Displaying section: Logs
+2024-08-30 11:11:41,115 - INFO - Displaying section: Fonts
+2024-08-30 11:11:42,129 - INFO - Displaying section: Logs
+2024-08-30 11:11:42,551 - INFO - Displaying section: Fonts
+2024-08-30 11:12:10,698 - INFO - Selected font color: #ff5500
+2024-08-30 11:12:10,699 - INFO - Font preview updated.
+2024-08-30 11:12:17,340 - INFO - Selected font color: #aa0000
+2024-08-30 11:12:17,342 - INFO - Font preview updated.
+2024-08-30 11:13:25,579 - DEBUG - shared_imports.py loaded successfully.
+2024-08-30 11:13:26,250 - INFO - Launching Total Commander: Picasso Edition...
+2024-08-30 11:13:26,323 - INFO - Tree items added in specified order.
+2024-08-30 11:13:26,328 - INFO - Initializing FontSettings UI.
+2024-08-30 11:13:26,363 - INFO - Font preview updated.
+2024-08-30 11:13:26,368 - INFO - Sections added to the stack.
+2024-08-30 11:13:26,368 - INFO - Settings loaded from .ini file.
+2024-08-30 11:13:26,369 - INFO - Log settings loaded from .ini file.
+2024-08-30 11:13:26,369 - INFO - Font preview updated.
+2024-08-30 11:13:26,370 - INFO - Font settings loaded.
+2024-08-30 11:13:26,370 - INFO - Font settings loaded from .ini file.
+2024-08-30 11:13:26,443 - INFO - All sections expanded.
+2024-08-30 11:13:26,445 - INFO - Initial settings applied.
+2024-08-30 11:13:26,450 - INFO - Displaying section: General
+2024-08-30 11:13:31,929 - INFO - Displaying section: Alerts
+2024-08-30 11:13:32,515 - INFO - Displaying section: Fonts
+2024-08-30 11:13:33,225 - INFO - Displaying section: Language
+2024-08-30 11:13:33,689 - INFO - Displaying section: Logs
+2024-08-30 11:13:34,204 - INFO - Displaying section: Shortcuts
+2024-08-30 11:13:35,151 - INFO - Displaying section: View
+2024-08-30 11:13:35,553 - INFO - Displaying section: Menu
+2024-08-30 11:13:36,129 - INFO - Displaying section: Panel
+2024-08-30 11:13:36,749 - INFO - Displaying section: Themes
+2024-08-30 11:13:37,091 - INFO - Displaying section: Toolbar
+2024-08-30 11:13:37,527 - INFO - Displaying section: UI

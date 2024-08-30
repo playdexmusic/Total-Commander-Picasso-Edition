@@ -14,10 +14,8 @@ from PyQt6.QtGui import QIcon, QFont, QColor, QCursor, QPalette
 from PyQt6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QSplitter, QTreeWidget,
     QTreeWidgetItem, QStackedWidget, QPushButton, QCheckBox, QFormLayout, QMessageBox, QLabel,
-    QLineEdit, QComboBox, QTextEdit, QSpinBox  # Ensure QSpinBox is imported
+    QLineEdit, QComboBox, QTextEdit, QSpinBox, QColorDialog, QFontComboBox    # Ensure all necessary widgets are imported
 )
-
-
 
 # ---------------------------
 # Project-Specific Modules
